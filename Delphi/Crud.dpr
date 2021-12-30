@@ -1,7 +1,6 @@
 program Crud;
 
 uses
-  FastMM4,
   Vcl.Forms,
   Crud.View.Principal in 'src\View\Crud.View.Principal.pas' {frmPrincipal},
   Crud.Models.Produtos in 'src\Models\Crud.Models.Produtos.pas',
@@ -21,7 +20,6 @@ uses
 
 begin
   Application.Initialize;
-  ReportMemoryLeaksOnShutdown := True;
   Application.MainFormOnTaskbar := True;
   Application.CreateForm(TdmConexao, dmConexao);
   Application.CreateForm(TfrmPrincipal, frmPrincipal);
